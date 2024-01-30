@@ -1,7 +1,7 @@
 .Button {
   appearance: none;
   background: none;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   border-radius: 4px;
   color: var(--puck-color-white);
   display: inline-flex;
@@ -27,11 +27,12 @@
 }
 
 .Button--medium {
-  min-height: 34px;
-  padding-bottom: 7px;
+  padding: 8px 20px;
+  /* min-height: 34px; */
+  /* padding-bottom: 7px;
   padding-left: 19px;
   padding-right: 19px;
-  padding-top: 7px;
+  padding-top: 7px; */
 }
 
 .Button--large {
@@ -65,13 +66,18 @@
 }
 
 .Button--secondary {
-  border: 1px solid var(--puck-color-grey-01);
-  color: var(--puck-color-black);
+  /* border: 1px solid var(--puck-color-azure-12); */
+  /* color: var(--puck-color-black); */
+
+  border: 1px solid;
+  color: currentColor;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .Button--secondary:hover {
-    background-color: var(--puck-color-azure-12);
+    background-color: var(--puck-color-grey-10);
+    opacity: 0.7;
+    color: var(--puck-color-black);
   }
 }
 
